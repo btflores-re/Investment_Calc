@@ -1,0 +1,118 @@
+:root {
+  --darkblue: #143642;
+  --blue: #1E9EB5;
+  --white: #fff;
+  --red: #a8201a;
+  --gray: #eee; }
+
+html, body {
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+nav, footer {
+  color: var(--white);
+  background-color: var(--darkblue); }
+
+nav .nav__wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto; }
+  nav .nav__wrapper h1 {
+    margin: 0 0 0 0.5rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  nav .nav__wrapper img {
+    height: 6rem;
+    margin-right: 0.5rem; }
+
+.wrapper {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: calc(100vh - 15rem); }
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--white);
+  background-color: var(--blue);
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-basis: 100%;
+  max-width: 150px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3); }
+  @media (min-width: 300px) {
+    .btn {
+      max-width: 110px; } }
+
+.btns__top {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0;
+  justify-content: center; }
+  .btns__top #btn__cashflow {
+    background-color: var(--darkblue); }
+
+.description {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center; }
+  .description .description__text {
+    line-height: 1.35; }
+
+form #form__inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+  form #form__inputs .form__card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    max-width: 275px;
+    margin: 10px; }
+    form #form__inputs .form__card label {
+      color: var(--darkblue);
+      font-size: 0.9rem; }
+    form #form__inputs .form__card .form__item {
+      border-radius: 0; }
+    form #form__inputs .form__card .form__item:focus {
+      outline: none;
+      background: var(--gray); }
+    form #form__inputs .form__card .form__item::-webkit-outer-spin-button,
+    form #form__inputs .form__card .form__item::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+
+form .btns__calc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px; }
+  form .btns__calc #clear {
+    background-color: var(--red); }
+  form .btns__calc #calculate {
+    background-color: var(--darkblue); }
+
+.response #answer, .response #error {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3em; }
+
+.response #error {
+  color: var(--red); }
+
+footer .footer__text {
+  margin: 0;
+  padding: 2rem;
+  text-align: center; }
+  footer .footer__text .footer__link, footer .footer__text .footer__link:hover, footer .footer__text .footer__link:visited {
+    color: var(--white); }

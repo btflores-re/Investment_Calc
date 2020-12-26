@@ -1,0 +1,169 @@
+:root {
+	--darkblue: #143642;
+	--blue: #1E9EB5;
+	--white: #fff;
+	--red: #a8201a;
+	--gray: #eee;
+}
+
+html, body {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+nav, footer {
+	color: var(--white);
+	background-color: var(--darkblue);
+}
+
+nav {
+
+	.nav__wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		padding: 1rem;
+		max-width: 600px;
+		margin: 0 auto;
+
+		h1 {
+			margin: 0 0 0 0.5rem;
+			font-size: 1.3rem;
+			text-align: center;
+			}
+
+		img {
+			height: 6rem;
+			margin-right: 0.5rem;
+		}
+	}
+}
+
+.wrapper {
+	padding: 1rem;
+	max-width: 900px;
+	margin: 0 auto;
+	min-height: calc(100vh - 15rem);
+}
+
+.btn {
+	border: none;
+	outline: none;
+	padding: 1rem;
+	color: var(--white);
+	background-color: var(--blue);
+	margin: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	flex-basis: 100%;
+	max-width: 150px;
+	box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+	
+	@media (min-width: 300px) {
+		max-width: 110px;
+	}
+}
+
+.btns__top {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -10px 0;
+	justify-content: center;
+
+	#btn__cashflow {
+		background-color: var(--darkblue);
+	}
+}
+
+.description {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	text-align: center;
+
+	.description__text {
+		line-height: 1.35;
+	}
+}
+
+form {
+	
+	#form__inputs {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		.form__card {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			max-width: 275px;
+			margin: 10px;
+	
+			label {
+				color: var(--darkblue);
+				font-size: 0.9rem;
+			}
+		
+			.form__item {
+				border-radius: 0;
+			}
+		
+			.form__item:focus {
+				outline: none;
+				background: var(--gray);
+			}
+		
+			.form__item::-webkit-outer-spin-button,
+			.form__item::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+		}
+	}
+
+	.btns__calc {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 10px;
+	
+		#clear {
+			background-color: var(--red);
+		}
+
+		#calculate {
+			background-color: var(--darkblue);
+		}
+	}
+}
+
+.response {
+
+	#answer, #error {
+		text-align: center;
+		font-weight: bold;
+		font-size: 2.3em;
+	}
+
+	#error {
+		color: var(--red);
+	}	
+}
+
+footer {
+	
+	.footer__text {
+		margin: 0;
+		padding: 2rem;
+		text-align: center;
+
+		.footer__link, .footer__link:hover, .footer__link:visited {
+			color: var(--white);
+		}
+	}
+}
